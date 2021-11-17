@@ -1,1 +1,7 @@
 How to implemnt pure Eleptic Curve on Finite Field in python?
+Let's kick off with some explanation on EC and why we need to be limited in Finite feild in practice
+
+
+All algebraic operations within the field:
+  point addition
+  multiplication
