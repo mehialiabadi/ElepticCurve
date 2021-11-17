@@ -3,9 +3,9 @@ Let's kick off with some explanation on EC and why we need to be limited in Fini
 
 
 All algebraic operations within the field:
-  point addition: if P and Q are two point on curve, we can uniquely compute P+Q 
-  multiplication: if P is a point on curve and k be any arbitraty number, we an compute k*P 
-  point reverse: given any point P, we can take −P to be the point opposite it.
-  point subtraction: if P and Q are two point on curve, P-Q means addition of  P+(-Q)
+  Point addition: if P and Q are two point on curve, we can uniquely compute P+Q 
+  Multiplication: if P is a point on curve and k be any arbitraty number, we an compute k*P 
+  Point reverse: given any point P, we can take −P to be the point opposite it.
+  Point subtraction: if P and Q are two point on curve, P-Q means addition of  P+(-Q)
   
   If P be a point on curve P+(-P)=0, indeed P+Q=0 means P and Q are opposite of each other.
