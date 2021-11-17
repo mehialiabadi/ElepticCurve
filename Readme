@@ -3,7 +3,9 @@ Let's kick off with some explanation on EC and why we need to be limited in Fini
 
 The elliptic curve equation over the finite field 𝔽p takes the following form:
 
-y^2 ≡ x^3 + ax + b (mod p)
+<img src="https://render.githubusercontent.com/render/math?math=
+y^2 ≡ x^3 + ax + b (mod p)">
+
 
 All algebraic operations within the field:
   Point addition: if R and Q are two point on curve, we can uniquely compute R+Q 
