@@ -3,8 +3,7 @@ Let's kick off with some explanation on EC and why we need to be limited in Fini
 
 The elliptic curve equation over the finite field 𝔽p takes the following form:
 
-![formula](https://render.githubusercontent.com/render/math?math=
-y^2 ≡ x^3 + ax + b (mod p))
+$y^2 ≡ x^3 + ax + b (mod p)$
 
 
 All algebraic operations within the field:
