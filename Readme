@@ -1,4 +1,4 @@
-How to implemnt pure Eleptic Curve on Finite Field in python?
+How to implemnt pure Eleptic Curve on Finite Field in Rust?
 Let's kick off with some explanation on EC and why we need to be limited in Finite feild in practice
 
 The elliptic curve equation over the finite field 𝔽p takes the following form:
