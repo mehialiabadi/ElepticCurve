@@ -13,3 +13,10 @@ All algebraic operations within the field:
   Point subtraction: if R and Q are two point on curve, R-Q means addition of  R+(-Q)
   
   If R be a point on curve R+(-R)=0, indeed P+Q=0 means R and Q are opposite of each other.
+  
+  We know that all (x,y) points belongs to field 𝔽p and all operations are occured in mod p. 
+  
+  There are a bunch of EC curves in cryptography. Let's go though the standrad ec curve which has been used in bitcoin
+ , spec256k1. 
+ 
+ 
