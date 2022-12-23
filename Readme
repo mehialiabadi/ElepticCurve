@@ -1,4 +1,4 @@
-In this repo, we would like to gain an understanding of implemnting some pure Eleptic Curve on Finite Field in Rust?
+In this repo, we would like to gain an understanding of implemnting some pure Eleptic Curves on Finite Field in Rust?
 Let's kick off with some explanation on EC and why we need to be limited in Finite feild in practice
 
 The elliptic curve equation over the finite field 𝔽p takes the following form:
@@ -16,12 +16,33 @@ As we require to work in a field, all algebraic operations should satisfy field 
   
   We know that all (x,y) points belongs to field 𝔽p and all operations are occured in mod p. 
   
-  There are a bunch of EC curves can be used in cryptography. Let's go though the standrad ec curve which has been used in bitcoin
+  There are a bunch of EC curves can be used in cryptography. Let's go through the standrad ec curve which has been used in bitcoin
  , spec256k1. 
  
  As we mentioned each curve defined by an equation, in case of  spec256k1, our eqiation is as follows: 
- Equation: 
- Base point:
+ 
+ Equation: $$y^2= (x^3 + ax + b) mod p$$ that defines elliptic curves over finite fields (mod p), in this case 
+ the curve is y²=x³+7 (mod p) indeed a=0 and b=7.
+ 
+ Base point: G - generator point G(x,y)  and an order of a curve n - that defines the size of keys / maximum allowed value.
+
+ 
+ Parameters: the constnt values that  standrd has defined.
+ 
+a = 0
+b = 7
+p = FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFE FFFFFC2F (8*8*4=256 bits / 32 bytes / 64 HEX digits)
+  = $$2^256−2^32−2^9−2^8−2^7−2^6−2^4−1$$
+g = (x,y) = 
+    (
+     79BE667E F9DCBBAC 55A06295 CE870B07 029BFCDB 2DCE28D9 59F2815B 16F81798, 
+     483ADA77 26A3C465 5DA4FBFC 0E1108A8 FD17B448 A6855419 9C47D08F FB10D4B8
+    )
+    (x,y):(256 bits, 256 bits)
+n = FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFE BAAEDCE6 AF48A03B BFD25E8C D0364141 (256 bits)
+
+Points on the curve can be represendted in affinity mode or 
+ 
  
  
  
