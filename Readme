@@ -1,9 +1,9 @@
-In this repo, we would like to come with an understanding of implemnting some pure Eleptic Curves on Finite Field in Rust?
+In this repo, we would like to come with an understanding of implemnting some pure Eleptic Curves on Finite Field in Rust!
 Let's kick off with some explanation on EC and why we need to be limited in Finite feild in practice.
 
 The elliptic curve equation over the finite field 𝔽p takes the following form:
 
-$y^2 ≡ x^3 + ax + b (mod p)$
+$$y^2 ≡ x^3 + ax + b (mod p)$$
 
 
 As we require to work in a field, all algebraic operations should satisfy field requirements:
@@ -18,6 +18,7 @@ As we require to work in a field, all algebraic operations should satisfy field 
   
   We will start with implemention of basic operations in eleptic curve over a finite feild with small order. Then we will extend our
 implementaion over  finite feild with very large order (over >64 bits). 
+
   There are a bunch of EC curves can be used in cryptography.
   
   Let's go through the standrad ec curve which has been used in bitcoin
