@@ -1,5 +1,5 @@
-In this repo, we would like to gain an understanding of implemnting some pure Eleptic Curves on Finite Field in Rust?
-Let's kick off with some explanation on EC and why we need to be limited in Finite feild in practice
+In this repo, we would like to come with an understanding of implemnting some pure Eleptic Curves on Finite Field in Rust?
+Let's kick off with some explanation on EC and why we need to be limited in Finite feild in practice.
 
 The elliptic curve equation over the finite field 𝔽p takes the following form:
 
@@ -16,7 +16,11 @@ As we require to work in a field, all algebraic operations should satisfy field 
   
   We know that all (x,y) points belongs to field 𝔽p and all operations are occured in mod p. 
   
-  There are a bunch of EC curves can be used in cryptography. Let's go through the standrad ec curve which has been used in bitcoin
+  We will start with implemention of basic operations in eleptic curve over a finite feild with small order. Then we will extend our
+implementaion over  finite feild with very large order (over >64 bits). 
+  There are a bunch of EC curves can be used in cryptography.
+  
+  Let's go through the standrad ec curve which has been used in bitcoin
  , spec256k1. 
  
  As we mentioned each curve defined by an equation, in case of  spec256k1, our eqiation is as follows: 
@@ -41,8 +45,9 @@ g = (x,y) =
     (x,y):(256 bits, 256 bits)
 n = FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFE BAAEDCE6 AF48A03B BFD25E8C D0364141 (256 bits)
 
-Points on the curve can be represendted in affinity mode or 
- 
+
+
+
  
  
  
