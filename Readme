@@ -1,9 +1,9 @@
 In this repo, we would like to come with an understanding of implemnting some pure Eleptic Curves (ECs) on Finite Field in Rust!
 Let's kick off with some explanation on EC and why we need to be limited in Finite feild in practice.
 
-The elliptic curve equation over the finite field `$\mathbb{F}_p$` takes the following form:
+The elliptic curve equation over the finite field `$$\mathbb{F}_p$$` takes the following form:
 ```math
-$y^2 ≡ x^3 + ax + b (mod p)$
+$$y^2 ≡ x^3 + ax + b (mod p)$$
 ```
 
 As we require to work in a field, all algebraic operations should satisfy field requirements:
