@@ -6,10 +6,15 @@ $y^2 ≡ x^3 + ax + b (mod p)$
 
 Basic algebraic operations in EC over a finite feild:
 
-  Addition : if R and Q are two point on curve, we can uniquely compute R+Q 
-  Multiplication : if R is a point on curve and k be any arbitraty number, we an compute k*R
+  Addition : if R and Q are two points on curve, we can uniquely compute R+Q.
+  
+  Multiplication : if R is a point on curve and k be any arbitraty number, we an compute k*R.
+  
   Point reverse : given any point R, we can take −R to be the point opposite of it.
-  Point subtraction : if R and Q are two point on curve, R-Q can be done as R+(-Q)
+  
+  Point subtraction : if R and Q are two points on curve, R-Q can be computed as R+(-Q).
+  
+  Note:  neither two points mulitication nor two points divition is not defined in EC.
     
   We will start with implemention of basic operations in eleptic curve over a finite feild with small order. Then we will extend our
 implementaion over finite feild with very large order (>64 bits) such as spec256k1. 
