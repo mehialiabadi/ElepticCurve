@@ -5,7 +5,7 @@ Let's  start with some explanation on EC and how it associated with the finite f
 The elliptic curve equation over the finite field $\mathbb{F}_p$ takes the following form:
 $y^2 ≡ x^3 + ax + b (mod p)$
 
- By this way of definition, the curve would be non-singular (does not cross over itself and has no sharp points); however the question is that why we require to limit all calcualations over a finite feild. 
+ By this way of definition, the curve would be non-singular (does not cross over itself and has no sharp points);  The question may someone inquiry is that why we require to limit all calcualations over a finite feild. 
  
  An uncomplicated answer is that computation over the real numbers are slow and inaccurate due to round-off error. Cryptographic applications require fast and precise arithmetic; therefor elliptic curve groups over the finite field is used in practice. 
  
