@@ -11,12 +11,12 @@ $y^2 ≡ x^3 + ax + b (mod p)$
  
  
  As it is known, new dicerete points on the EC can be created by point addition, point doubling and scalar muliplication and form an abelian group; thus, it is expected that meet abelian properties described as follows:
- - <img src="https://latex.codecogs.com/gif.latex?O_t=\text {  \begin{itemize}
+  <img src="https://latex.codecogs.com/gif.latex?=\text { \begin{itemize}
  \item Identity 
  \item Inversion 
  \item Point addition
  \item 
- \end{itemize}} t " /> 
+ \end{itemize}} "/> 
 
 
  
