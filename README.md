@@ -10,11 +10,15 @@ $y^2 ≡ x^3 + ax + b (mod p)$
  An uncomplicated answer is that computation over the real numbers are slow and inaccurate due to round-off error. Cryptographic applications require fast and precise arithmetic; therefor elliptic curve groups over the finite field is used in practice. 
  
  
- As it is known, new dicerete points on the EC can be created by point addition, point doubling and scalar muliplication.  
+ As it is known, new dicerete points on the EC can be created by point addition, point doubling and scalar muliplication and form an abelian group; thus, it is expected that meet abelian properties described as follows:
+ \begin{itemize}
+ \item Identity 
+ \item Inversion 
+ \item Point addition
+ \item 
+ \end{itemize}
  
 
-
-As it is known that an EC on the finite feild generates an  abelian Group.
 
   Addition : if R and Q are two points on curve, we can uniquely compute R+Q.
   
@@ -24,9 +28,8 @@ As it is known that an EC on the finite feild generates an  abelian Group.
   
   Point subtraction : if R and Q are two points on curve, R-Q can be computed as R+(-Q).
   
-  Note:  neither two points mulitication nor two points divition is not defined in EC.
+  Note:  while working with EC, neither two points mulitication nor two points division is not defind.
     
-  We will start with implemention of basic operations in eleptic curve over a finite feild with small order. Then we will extend our
-implementaion over finite feild with very large order (>64 bits) such as spec256k1. 
+  We will start with implemention of basic operations in eleptic curve over a finite feild with small order. Then we will extend our implementaion over finite feild with very large order ( > 64 bits) such as spec256k1. 
 
 
