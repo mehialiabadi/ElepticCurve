@@ -11,16 +11,15 @@ $y^2 ≡ x^3 + ax + b (mod p)$
  
  
  As it is known, new dicerete points on the EC can be created by point addition, point doubling and scalar muliplication and form an abelian group; thus, it is expected that meet abelian properties described as follows:
-  <img src="https://latex.codecogs.com/gif.latex?=\text { \begin{itemize}
+ 
+```math
+\begin{itemize}
  \item Identity 
  \item Inversion 
  \item Point addition
  \item 
- \end{itemize}} "/> 
-
-
- 
-
+ \end{itemize}
+ ```
 
   Addition : if R and Q are two points on curve, we can uniquely compute R+Q.
   
