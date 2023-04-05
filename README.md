@@ -10,11 +10,12 @@ $y^2 ≡ x^3 + ax + b (mod p)$
  An uncomplicated answer is that computation over the real numbers are slow and inaccurate due to round-off error. Cryptographic applications require fast and precise arithmetic; therefor elliptic curve groups over the finite field is used in practice. 
  
  
- As it is known, new dicerete points on the EC can be created by point addition, point doubling and scalar muliplication and form an abelian group; thus, it is expected that meet abelian properties described as follows:
+ As it is known, new dicerete points on the EC can be created by point addition, point doubling and scalar muliplication and form an abelian group with a special “point
+at infinity” O as the neutral element; thus, it is expected that meet abelian properties described as follows:
  
 ```math
 \begin{itemize}
- \item Identity 
+ \item Identical element
  \item Inversion 
  \item Point addition
  \item 
