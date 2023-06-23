@@ -11,13 +11,9 @@ $y^2 ≡ x^3 + ax + b (mod p)$
  
  
  As it is known, new discrete points on the EC can be created by point addition, point doubling and scalar multiplication and form an abelian group with a special “point
-at infinity” O as the neutral element; thus, it is expected that meets abelian properties described as follows:
- 
-```
-  Identical element
- Inversion 
- Point addition
- ```
+at infinity” O as the neutral element; thus, it is expected that meets abelian properties. 
+
+Let's define math operations that can be done on a curve:
 
   Addition: if R and Q are two points on the curve, we can uniquely compute R+Q.
   
