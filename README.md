@@ -3,7 +3,7 @@ In this repo, we would like to come up with an understanding of implementing som
 Let's start with some explanation of EC and how it is associated with the finite field. 
 
 The elliptic curve equation over the finite field $\mathbb{F}_p$ takes the following form:
-$y^2 ≡ x^3 + ax + b (mod p)$
+$y^2 ≡ x^3 + ax + b ~(mod ~p)$
 
  By this way of definition, the curve would be non-singular (does not cross over itself and has no sharp points);  The question may someone inquiry is that why we require to limit all calculations over a finite field.  Recall that the field $\mathbb{F}_p$ uses the numbers from 0 to $p - 1$, and computations end by taking the remainder on division by $p$
  
