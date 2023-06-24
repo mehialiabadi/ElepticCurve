@@ -1,6 +1,6 @@
 
 mod eleptic_curve;
- mod algebra;
+mod algebra;
 use crate::eleptic_curve::EC::{ElepticCurve,Point};
 
 fn main() {
@@ -12,13 +12,13 @@ let a:i32=-1;
 let b:i32=0;
 let p:i32=71; 
 
-let simpleEC=ElepticCurve{a,b,p};
+let simple_ec=ElepticCurve{a,b,p};
 
 let p1=Point{pointx:5,pointy:1};
-let mut mylist:Vec<Point>= Vec::new();
-let mut mylistallpoints:Vec<Point>= Vec::new();
+let mut my_list:Vec<Point>= Vec::new();
+let mut mylist_allpoints:Vec<Point>= Vec::new();
 
-mylistallpoints=simpleEC.generate_allPointsNaive();
+mylist_allpoints=simple_ec.generate_allPointsNaive();
 }
 
 

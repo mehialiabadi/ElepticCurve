@@ -117,5 +117,47 @@ impl ElepticCurve {
         return pointlist;
         }
     }
+    #[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_point_onCurve() {
+      
+        let ec = ElepticCurve{ a:2,b:2, p:17};
+
+       // assert_eq!(ec.point_onCurve(3,5), false);
+        //assert_eq!(ec.point_onCurve(5,1), true);
+        assert_eq!(ec.point_onCurve(7,6), true);
+
+
+    }
+    #[test]
+    fn test_point_double() { 
+       
+        let ec = ElepticCurve{ a:2,b:2, p:17};
+
+        let doublePoint=Point{pointx:5, pointy:16};
+
+        assert_eq!(ec.point_double(7,6), doublePoint);
+    }
+    #[test]
+    fn test_point_addition() { 
+        let ec = ElepticCurve{ a:2,b:2, p:17};
+        let point=Point{
+            pointx:1,
+            pointy:2
+        };
+        let point1=Point{pointx:7, pointy:6};
+        let point2=Point{pointx:3, pointy:16};
+        let point3=Point{pointx:9, pointy:-1};
+
+        assert_eq!(ec.point_addition(point1,point2), point3);
+    }
+
+}
+
+
+
 }
 
