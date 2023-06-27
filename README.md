@@ -23,10 +23,10 @@ Let's define math operations that can be done on a curve:
   
   Point subtraction: if R and Q are two points on the curve, R-Q can be computed as R+(-Q).
   
-  Note:  while working with EC, neither two points multiplication nor two points division are not defined.
+  Note:  while working with EC, neither multiplication nor division of two points is not defined.
     
   We will start with the implementation of basic operations in an elliptic curve over a finite field with a small order. Then we will extend our implementation over a finite field with a very large order ( > 64 bits) such as spec256k1. 
-Change the value of a, b and p parameters and enjoy making diffrent curves (integeres less than 4294967295)!
+Change the value of a, b, and p parameters and enjoy making different curves (integers less than 4294967295)!
 
 # run
 cargo run
