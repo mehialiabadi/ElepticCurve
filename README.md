@@ -27,13 +27,15 @@ Let's define math operations that can be done on a curve:
     
   We will start with the implementation of basic operations in an elliptic curve over a finite field with a small order. Then we will extend our implementation over a finite field with a very large order.  
 Change the value of a, b, and p parameters and enjoy making different curves (integers less than 4294967295)!
-The default integer type in Rust is i32. Signed integer types in Rust start with i and it has 8, 16, 32, 64, and 128-bit. The minimum and maximum values are from -(2ⁿ⁻¹) to 2ⁿ⁻¹-1.
+The default integer type in Rust is i32. Signed integer types in Rust start with i and it has 8, 16, 32, 64, and 128-bit. The minimum and maximum values are from $-(2^{n-1}) to $2^{n-1}-1$.
 
 Computation in a group with $p < 2^{127}-1 $ is straightforward, all that needs to be done is mod p. 
 However, when the value of p > 2^{127}, it required more effort. For example, consider curve speck256  used in Bitcoin's public-key cryptography. The curve is defined by the following parameters:
+
 p = FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFE FFFFFC2F
 = $2^256 - 2^32 - 2^9 - 2^8 - 2^7 - 2^6 - 2^4 - 1$
-The curve $ E: y^2 = x^3+ax+b& over $F_p$ is defined by:
+
+The curve $ E: y^2 = x^3+ax+b$ over $F_p$ is defined by:
 
 a = 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
 b = 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000007
