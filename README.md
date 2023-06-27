@@ -44,6 +44,7 @@ b = 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000007
 Now we are dealing with big numbers. For the speck256 with a field size of 256 bits, we can define a new struct U256 to store the field element (here we require to implement +,*,- , and other operations over two field elements of type U256);
 
 struct U256	{i128,i128} or
+
 struct U256 {i64,i64,i64,i64}
 
 # run
